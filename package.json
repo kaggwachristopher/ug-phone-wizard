@@ -1,5 +1,5 @@
 {
-  "name": "ug-phone-wizard",
+  "name": "@scope/ug-phone-wizard",
   "version": "1.0.0",
   "description": "This package helps you determine which service provider a Ugandan phone number belongs to and check validity of Ugandan numbers",
   "main": "index.js",
