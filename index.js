@@ -9,11 +9,12 @@ const providerCodes = {
 };
 
 class UgPhoneWizard {
-  static isUgandanNumber = (ugandanPhoneNumber) => {
+  static isUgandanNumber  (ugandanPhoneNumber)  {
     return validUgandanNumber.test(ugandanPhoneNumber.toString());
   };
 
-  static getUgandanProvider = (ugandanPhoneNumber) => {
+  static getUgandanProvider(ugandanPhoneNumber) {
+    
     const phoneNumber = ugandanPhoneNumber.toString();
     if (this.isUgandanNumber(phoneNumber)) {
       const codeWith7 = phoneNumber.match(/^(256|0|\+256)[7]{1}?/)[0];
@@ -29,9 +30,10 @@ class UgPhoneWizard {
       }
       return "No current provider";
     } else {
-      throw new Error("Not a correct Ugandan phone number");
+      throw new Error("Not a valid Ugandan phone number");
     }
   };
 }
 
 module.exports = UgPhoneWizard;
+exports.phoneWizard=UgPhoneWizard
