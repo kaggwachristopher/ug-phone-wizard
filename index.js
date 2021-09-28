@@ -8,21 +8,22 @@ const providerCodes = {
   Africell: [9],
 };
 
-class UgPhoneWizard {
-  static isUgandanNumber  (ugandanPhoneNumber)  {
+class UgPhone {
+  static isUgandanNumber(ugandanPhoneNumber) {
     return validUgandanNumber.test(ugandanPhoneNumber.toString());
-  };
+  }
 
   static getUgandanProvider(ugandanPhoneNumber) {
-    
     const phoneNumber = ugandanPhoneNumber.toString();
     if (this.isUgandanNumber(phoneNumber)) {
       const codeWith7 = phoneNumber.match(/^(256|0|\+256)[7]{1}?/)[0];
       const numberWithoutCodeAnd7 = phoneNumber.replace(codeWith7, "");
       const providerCode = numberWithoutCodeAnd7.charAt(0);
-
       for (const [key, value] of Object.entries(providerCodes)) {
-        if (value.find((codeNumber) => providerCode == codeNumber)) {
+        const providerMatch =
+          value.find((codeNumber) => providerCode == codeNumber) ||
+          value.find((codeNumber) => providerCode == codeNumber) == 0;
+        if (providerMatch) {
           return key;
         } else {
           continue;
@@ -32,8 +33,7 @@ class UgPhoneWizard {
     } else {
       throw new Error("Not a valid Ugandan phone number");
     }
-  };
+  }
 }
-
-module.exports = UgPhoneWizard;
-exports.phoneWizard=UgPhoneWizard
+module.exports = UgPhone;
+exports.ugPhone = UgPhone;

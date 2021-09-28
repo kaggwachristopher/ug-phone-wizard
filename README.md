@@ -1,13 +1,13 @@
-# ug-phone-wizard
+# ug-phone
 
 Check Validity and Service Providers of Ugandan phone numbers
 
 ## Installation
 
-Use the node package manager [npm](https://docs.npmjs.com/) to install ug-phone-wizard.
+Use the node package manager [npm](https://docs.npmjs.com/) to install ug-phone.
 
 ```bash
-npm install ug-phone-wizard
+npm install ug-phone
 ```
 
 ## Usage
@@ -17,26 +17,26 @@ npm install ug-phone-wizard
 #### ES5
 
 ```javascript
-const phoneWizard = require("ug-phone-wizard");
+const ugPhone = require("ug-phone");
 ```
 
 #### ES6
 
 ```javascript
-import phoneWizard from "ug-phone-wizard";
+import ugPhone from "ug-phone";
 ```
 
 ### Check if phone number is in valid Ugandan format
 
 ```javascript
-phoneWizard.isUgandanNumber("0755128879");
+ugPhone.isUgandanNumber("0755128879");
 // returns true
 ```
 
 ### Get network service provider of a given phone number
 
 ```javascript
-phoneWizard.getUgandanProvider("+256755128879");
+ugPhone.getUgandanProvider("+256755128879");
 // returns Airtel
 ```
 

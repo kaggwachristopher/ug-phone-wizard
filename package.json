@@ -1,6 +1,6 @@
 {
-  "name": "ug-phone-wizard",
-  "version": "1.0.0",
+  "name": "ug-phone",
+  "version": "1.0.3",
   "description": "Determine which service provider a Ugandan phone number belongs to and check validity of Ugandan phone numbers",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,11 @@
     "Phone",
     "Phone Provider",
     "Uganda Phone",
-    "Phone Service Provider",
+    "Service Provider",
     "Uganda",
     "Phone number",
-    "Phone number Validation"
+    "Phone Validation",
+    "Network Provider"
   ],
   "author": "Christopher Kaggwa",
   "license": "ISC"
