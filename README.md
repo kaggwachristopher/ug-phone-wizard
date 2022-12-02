@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/e050f7214bcfed1f2e06/maintainability)](https://codeclimate.com/github/kaggwachristopher/ug-phone-wizard/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e050f7214bcfed1f2e06/test_coverage)](https://codeclimate.com/github/kaggwachristopher/ug-phone-wizard/test_coverage)
+
 # ug-phone
 
 Check Validity and Service Providers of Ugandan phone numbers
