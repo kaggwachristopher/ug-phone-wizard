@@ -1,5 +1,7 @@
 # ug-phone
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5c0365d05cdd4c0a8cf67800a0c37b69)](https://app.codacy.com/gh/kaggwachristopher/ug-phone-wizard?utm_source=github.com&utm_medium=referral&utm_content=kaggwachristopher/ug-phone-wizard&utm_campaign=Badge_Grade_Settings)
+
 Check Validity and Service Providers of Ugandan phone numbers
 
 ## Installation
