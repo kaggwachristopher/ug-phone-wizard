@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/e050f7214bcfed1f2e06/maintainability)](https://codeclimate.com/github/kaggwachristopher/ug-phone-wizard/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e050f7214bcfed1f2e06/test_coverage)](https://codeclimate.com/github/kaggwachristopher/ug-phone-wizard/test_coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3e3b7040c38142b7bbacb9269e71b61b)](https://www.codacy.com/gh/kaggwachristopher/ug-phone-wizard/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kaggwachristopher/ug-phone-wizard&amp;utm_campaign=Badge_Grade) [![Maintainability](https://api.codeclimate.com/v1/badges/e050f7214bcfed1f2e06/maintainability)](https://codeclimate.com/github/kaggwachristopher/ug-phone-wizard/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e050f7214bcfed1f2e06/test_coverage)](https://codeclimate.com/github/kaggwachristopher/ug-phone-wizard/test_coverage)
 
 # ug-phone
 
