@@ -31,16 +31,18 @@ import ugPhone from "ug-phone";
 ### Check if phone number is in valid Ugandan format
 
 ```javascript
-ugPhone.isUgandanNumber("0755128879");
+ugPhone.isUgandanNumber("0755128879", [bool:validateLandline]);
 // returns true
 ```
+  *By default, landline numbers are accepted, second argument is optional and true by default*
 
 ### Get network service provider of a given phone number
 
 ```javascript
-ugPhone.getUgandanProvider("+256755128879");
+ugPhone.getUgandanProvider("+256755128879", [boolean:acceptLandline]);
 // returns Airtel
 ```
+*By default, landline numbers are accepted, second argument is optional and true by default*
 
 ### Valid number criteria
 
