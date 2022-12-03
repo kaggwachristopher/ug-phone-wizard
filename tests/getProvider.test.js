@@ -1,5 +1,4 @@
 const getProvider = require("../modules/getProvider")
-const constants = require("../utils/constants")
 
 test('Should return Airtel for Airtel code 5', () => {
     expect(getProvider("0755128879")).toBe("Airtel")
@@ -32,4 +31,12 @@ test('Should return Uganda Telecom for Uganda Telecom code 1', () => {
 
 test('Should return Lycamobile for Lycamobile code 2', () => {
     expect(getProvider("0725128879")).toBe("LycaMobile")
+})
+
+test('Should return Smile Telecom for Smile Telecom code 3', () => {
+    expect(getProvider("0735128879")).toBe("Smile Telecom")
+})
+
+test('Should return Africell for Africell code 3', () => {
+    expect(getProvider("0735128879")).toBe("Africell")
 })
