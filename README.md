@@ -44,21 +44,30 @@ ugPhone.getUgandanProvider("+256755128879");
 
 ### Valid number criteria
 
+#### Mobile
 - Begins with `2567` or `07` or `+2567` followed by exactly **8** digits
 
+#### Landline
+- Begins with `256` or `0` or `+256` followed `20` or `31` or `39` followed by exactly **8** digits
+ 
 #### Valid number examples
-
+##### Mobile
 - 07712345678
 - +256712345678
 - 256712345678
 
+##### Landline
+- 0202345678
+- 256392345678
+- +256312345678
+  
 ### Available service providers
 
 - Airtel
 - MTN
 - Africell
 - Uganda Telecom
-- Lycamobile
+- LycaMobile
 - Smile Telecom
 
 ## Contributing
