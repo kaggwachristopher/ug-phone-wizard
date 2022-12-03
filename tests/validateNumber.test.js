@@ -1,7 +1,7 @@
 const validateNumber = require("../modules/validateNumber")
 
 test('Should return true for all valid number formats', () => {
-    expect(validateNumber("0755128879")).toBe(true) &&
+    expect(validateNumber("0705128879")).toBe(true) &&
         expect(validateNumber("256755128879")).toBe(true) &&
         expect(validateNumber("+256755128879")).toBe(true) &&
         expect(validateNumber("+256705128879")).toBe(true)
@@ -32,11 +32,11 @@ test('Should return false when number has whitespaces', () => {
 })
 
 test('Should return false when number is landline and validateLandLine is false', () => {
-    expect(validateNumber("+256390237560")).toBe(false)
+    expect(validateNumber("+256390237560", false)).toBe(false)
 })
 
 test('Should return true when number is landline and validateLandLine is true', () => {
-    expect(validateNumber("+256390237560", true)).toBe(false)
+    expect(validateNumber("+256390237560")).toBe(true)
 })
 
 
