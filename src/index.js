@@ -7,5 +7,4 @@ class UgPhone {
   static getUgandanProvider = getUgandanProvider;
 }
 
-module.exports = UgPhone;
-exports.ugPhone = UgPhone;
+module.exports = UgPhone

@@ -26,19 +26,19 @@ const getDetails = (phoneNumber) => {
 
 const getUgandanProvider = (ugandanPhoneNumber, acceptLandline = true) => {
     const phoneNumber = ugandanPhoneNumber.toString();
+
     const isValid = validateNumber(phoneNumber, acceptLandline);
     if (isValid) {
 
         var numberDetails = getDetails(ugandanPhoneNumber)
 
         const providerCode = numberDetails.simPrefix;
+
         for (const [key, value] of Object.entries(constants.providerCodes)) {
 
-            const isMobileMatch = value.mobile.find((codeNumber) => providerCode == codeNumber) ||
-                value.mobile.find((codeNumber) => providerCode == codeNumber) == 0;
+            const isMobileMatch = numberDetails.numberType == "mobile" && value.mobile.includes(providerCode);
 
-            const isLandLineMatch = value.landline.find((codeNumber) => providerCode == codeNumber) ||
-                value.landline.find((codeNumber) => providerCode == codeNumber) == 0;
+            const isLandLineMatch = numberDetails.numberType == "landLine" && value.landLine.includes(providerCode);
 
             const providerMatch = isMobileMatch || (acceptLandline && isLandLineMatch);
 
@@ -50,7 +50,7 @@ const getUgandanProvider = (ugandanPhoneNumber, acceptLandline = true) => {
             }
         }
     }
-    return "Invalid ugandan number";
+    return null;
 }
 
 module.exports = getUgandanProvider;
