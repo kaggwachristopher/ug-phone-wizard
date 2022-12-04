@@ -1,4 +1,4 @@
-const validateNumber = require("../modules/validateNumber")
+const validateNumber = require("../src/modules/validateNumber")
 
 test('Should return true for all valid number formats', () => {
     expect(validateNumber("0705128879")).toBe(true) &&

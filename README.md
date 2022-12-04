@@ -41,7 +41,11 @@ ugPhone.isUgandanNumber("0755128879", [bool:validateLandline]);
 ```javascript
 ugPhone.getUgandanProvider("+256755128879", [boolean:acceptLandline]);
 // returns Airtel
+// 
 ```
+##### Note
+*This method returns null if no match is found*
+
 *By default, landline numbers are accepted, second argument is optional and true by default*
 
 ### Valid number criteria

@@ -1,4 +1,4 @@
-const getProvider = require("../modules/getProvider")
+const getProvider = require("../src/modules/getProvider")
 
 test('Should return Airtel for Airtel code 5', () => {
     expect(getProvider("0755128879")).toBe("Airtel")
@@ -13,7 +13,7 @@ test('Should return Airtel for Airtel code 4', () => {
 })
 
 test('Should not return Airtel for Airtel landline code 020 when acceptLandline is false', () => {
-    expect(getProvider("0202207100", false).includes("Airtel")).toBe(false)
+    expect(getProvider("0202207100", false)).to
 })
 
 test('Should return Airtel for Airtel landline code 020 when acceptLandline is true', () => {
@@ -34,7 +34,7 @@ test('Should return MTN for MTN code 6', () => {
 })
 
 test('Should not return MTN for MTN landline code 039 when acceptLandline is false', () => {
-    expect(getProvider("0392207100", false).includes("MTN")).toBe(false)
+    expect(getProvider("0392207100", false)).toBeNull()
 })
 
 test('Should return MTN for MTN landline code 039 when acceptLandline is true', () => {
@@ -42,7 +42,7 @@ test('Should return MTN for MTN landline code 039 when acceptLandline is true', 
 })
 
 test('Should not return MTN for MTN landline code 031 when acceptLandline is false', () => {
-    expect(getProvider("0312207100", false).includes("MTN")).toBe(false)
+    expect(getProvider("0312207100", false)).toBeNull()
 })
 
 test('Should return MTN for MTN landline code 031 when acceptLandline is true', () => {
