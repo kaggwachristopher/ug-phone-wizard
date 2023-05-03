@@ -1,4 +1,4 @@
-const validUgandanNumber = /^(256|0|\+256)[7]{1}[0-9]{8}$/gim;
+const validUgandanNumber = /^(256|0|\+256)7\d{7}\d$/;
 const providerCodes = {
   Airtel: [0, 4, 5],
   MTN: [7, 8, 6],
