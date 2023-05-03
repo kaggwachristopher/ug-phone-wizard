@@ -1,6 +1,6 @@
 {
   "name": "ug-phone",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Determine which service provider a Ugandan phone number belongs to and check validity of Ugandan phone numbers",
   "main": "index.js",
   "scripts": {
